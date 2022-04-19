@@ -16,6 +16,8 @@ public class CalculateMethodsTest {
 
     @Test
     public void testDivideByZero() {
-        assertThrows(ArithmeticException.class, () -> calculateMethods.divide(100, 0));
+        int a=100;
+        int b=0;
+        assertThrows(ArithmeticException.class, () -> calculateMethods.divide(a, b));
     }
 }
